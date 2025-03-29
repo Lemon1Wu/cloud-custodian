@@ -1,0 +1,21 @@
+policies:
+  - name: cbr_backup_mark_for_op
+    resource: huaweicloud.cbr-backup
+    filters:
+      - 'tags': empty
+    actions:
+      - type: mark-for-op
+        tag: custodian_status
+        op: add_tags
+        days: 4
+  - name: cbr_vault_marked_for_op
+    resource: huaweicloud.cbr-vault
+    filters:
+      - type: marked-for-op
+        tag: custodian_status
+        op: add_tags
+        skew: 4
+    actions:
+      - type: add_tags
+        keys: ['1', '2']
+        values: ['1', '2']

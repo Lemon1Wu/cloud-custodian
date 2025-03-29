@@ -1,0 +1,14 @@
+policies:
+    - name: cbr_vault_tag
+      resource: huaweicloud.cbr-vault
+      filters:
+        - type: tag-count
+          op: equal
+          count: 0
+      actions:
+        - type: tag
+          tags:
+            test_key1: test_value1
+            test_key2: test_value2
+
+

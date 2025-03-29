@@ -1,0 +1,9 @@
+policies:
+    - name: cbr_vault_auto_tag_user
+      resource: huaweicloud.cbr-vault
+      filters:
+        - tag:OwnerContact: absent
+      actions:
+        - type: auto-tag-user
+          tag: OwnerContact
+

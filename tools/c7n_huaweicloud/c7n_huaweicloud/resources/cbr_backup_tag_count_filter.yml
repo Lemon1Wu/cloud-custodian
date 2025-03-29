@@ -1,0 +1,8 @@
+policies:
+    - name: cbr_backup_tag_count
+      resource: huaweicloud.cbr-backup
+      filters:
+        - type: tag-count
+          op: equal
+          count: 0
+

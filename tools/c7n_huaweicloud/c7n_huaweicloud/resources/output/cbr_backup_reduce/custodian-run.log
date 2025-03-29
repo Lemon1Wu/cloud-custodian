@@ -1,0 +1,3 @@
+2025-03-29 22:03:21,382 - custodian.policy - INFO - policy:cbr_backup_reduce resource:huaweicloud.cbr-backup region: count:3 time:0.96
+2025-03-29 22:06:35,524 - custodian.policy - INFO - policy:cbr_backup_reduce resource:huaweicloud.cbr-backup region: count:3 time:0.00
+2025-03-29 22:10:59,049 - custodian.policy - INFO - policy:cbr_backup_reduce resource:huaweicloud.cbr-backup region: count:3 time:0.00

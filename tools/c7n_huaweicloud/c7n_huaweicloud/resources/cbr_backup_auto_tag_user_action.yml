@@ -1,0 +1,10 @@
+policies:
+    - name: cbr_backup_auto_tag_user
+      resource: huaweicloud.cbr-backup
+      filters:
+        - tag:OwnerContact: absent
+      actions:
+        - type: auto-tag-user
+          tag: OwnerContact
+
+

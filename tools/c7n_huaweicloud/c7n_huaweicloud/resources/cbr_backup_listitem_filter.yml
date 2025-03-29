@@ -1,0 +1,7 @@
+policies:
+    - name: cbr_backup_listitem
+      resource: huaweicloud.cbr-backup
+      filters:
+        - type: list-item
+          key: resources
+          attrs: empty

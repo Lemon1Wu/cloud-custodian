@@ -1,0 +1,73 @@
+{
+  "policy": {
+    "name": "cbr_vault_reduce",
+    "resource": "huaweicloud.cbr-vault",
+    "filters": [
+      {
+        "type": "reduce",
+        "sort-by": "created_at",
+        "order": "desc"
+      }
+    ]
+  },
+  "version": "0.9.43",
+  "execution": {
+    "id": "602b6b27-01cf-4369-90a4-80e746c1786c",
+    "start": 1743257454.3624885,
+    "end_time": 1743257455.442548,
+    "duration": 1.08005952835083
+  },
+  "config": {
+    "region": "",
+    "regions": [],
+    "cache": "~/.cache/cloud-custodian.cache",
+    "profile": null,
+    "account_id": null,
+    "assume_role": null,
+    "session_policy": null,
+    "external_id": null,
+    "log_group": null,
+    "tracer": null,
+    "metrics_enabled": null,
+    "metrics": null,
+    "output_dir": "./output",
+    "cache_period": 15,
+    "dryrun": false,
+    "authorization_file": null,
+    "subparser": "run",
+    "config": null,
+    "configs": [
+      "cbr_vault_reduce_filter.yml"
+    ],
+    "policy_filters": [],
+    "resource_types": [],
+    "verbose": null,
+    "quiet": null,
+    "debug": false,
+    "skip_validation": false,
+    "command": "c7n.commands.run",
+    "vars": null
+  },
+  "sys-stats": {},
+  "api-stats": {},
+  "metrics": [
+    {
+      "MetricName": "ResourceCount",
+      "Timestamp": "2025-03-29T22:10:55.442335",
+      "Value": 3,
+      "Unit": "Count"
+    },
+    {
+      "MetricName": "ResourceTime",
+      "Timestamp": "2025-03-29T22:10:55.442347",
+      "Value": 1.07948899269104,
+      "Unit": "Seconds"
+    },
+    {
+      "MetricName": "ActionTime",
+      "Timestamp": "2025-03-29T22:10:55.442538",
+      "Value": 2.1457672119140625e-06,
+      "Unit": "Seconds"
+    }
+  ]
+}

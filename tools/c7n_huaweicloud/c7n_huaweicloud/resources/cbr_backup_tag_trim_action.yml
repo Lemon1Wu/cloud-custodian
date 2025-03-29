@@ -1,0 +1,10 @@
+policies:
+    - name: cbr_backup_tag_trim
+      resource: huaweicloud.cbr-backup
+      actions:
+        - type: tag-trim
+          space: 3
+          preserve:
+            test_key1
+
+

@@ -1,0 +1,10 @@
+policies:
+    - name: cbr_vault_tag_trim
+      resource: huaweicloud.cbr-vault
+      actions:
+        - type: tag-trim
+          space: 3
+          preserve:
+            test_key1
+
+

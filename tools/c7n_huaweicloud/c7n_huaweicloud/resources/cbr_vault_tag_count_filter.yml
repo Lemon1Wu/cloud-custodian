@@ -1,0 +1,8 @@
+policies:
+    - name: cbr_vault_tag_count
+      resource: huaweicloud.cbr-vault
+      filters:
+        - type: tag-count
+          op: equal
+          count: 0
+

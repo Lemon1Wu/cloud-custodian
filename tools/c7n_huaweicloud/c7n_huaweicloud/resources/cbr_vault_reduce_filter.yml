@@ -1,0 +1,8 @@
+policies:
+    - name: cbr_vault_reduce
+      resource: huaweicloud.cbr-vault
+      filters:
+        - type: reduce
+          sort-by: created_at
+          order: desc
+
